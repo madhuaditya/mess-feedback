@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mess Feedback Form</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Mess Feedback Form</h1>
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="date" id="date" required />
+      <select id="meal">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+      </select>
+      <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required />
+      <textarea id="comments" rows="4" placeholder="Your Comments"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <button id="downloadExcel">Download Feedback as Excel</button>
+  </div>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</body>
+</html>
